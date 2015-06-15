@@ -1102,6 +1102,14 @@ namespace Microsoft.ClearScript
         }
 
         /// <summary>
+        /// Converts the specified value to a strongly typed <see cref="System.Guid"/> instance.
+        /// </summary>
+        public object toGuid(IConvertible value)
+        {
+            return HostObject.Wrap(new Guid(Convert.ToString(value)));
+        }
+
+        /// <summary>
         /// Gets the value of a property in a dynamic host object that implements <see cref="IPropertyBag"/>.
         /// </summary>
         /// <param name="target">The dynamic host object that contains the property to get.</param>
