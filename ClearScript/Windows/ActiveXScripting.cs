@@ -160,15 +160,16 @@ namespace Microsoft.ClearScript.Windows
         HackFiberSupport = 0x70000000,
         HackTridentEventSink = 0x70000001,
         AbbreviateGlobalNameResolution = 0x70000002,
-        HostKeepAlive = 0x70000004
+        HostKeepAlive = 0x70000004,
     }
 
-    internal enum ScriptLanguageVersion
+    internal enum ScriptLanguageVersion : int
     {
         Default = 0,
         Compatibility = 1,
         Standards = 2,
-        Max = 255
+        SCRIPTLANGUAGEVERSION_5_9 = 3,
+        Max = 15
     }
 
     #endregion

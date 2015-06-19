@@ -161,7 +161,7 @@ namespace Microsoft.ClearScript.Windows
                     activeScriptProperty.GetProperty(ScriptProp.Name, IntPtr.Zero, out name);
                     if (Equals(name, "JScript"))
                     {
-                        object value = ScriptLanguageVersion.Standards;
+                        object value = ScriptLanguageVersion.Max;
                         activeScriptProperty.SetProperty(ScriptProp.InvokeVersioning, IntPtr.Zero, ref value);
                     }
                 }
@@ -310,7 +310,7 @@ namespace Microsoft.ClearScript.Windows
                     activeScriptProperty.GetProperty(ScriptProp.Name, IntPtr.Zero, out name);
                     if (Equals(name, "JScript"))
                     {
-                        object value = ScriptLanguageVersion.Standards;
+                        object value = ScriptLanguageVersion.Max;
                         activeScriptProperty.SetProperty(ScriptProp.InvokeVersioning, IntPtr.Zero, ref value);
                     }
                 }
