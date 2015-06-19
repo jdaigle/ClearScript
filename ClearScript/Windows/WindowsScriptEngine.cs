@@ -259,6 +259,11 @@ namespace Microsoft.ClearScript.Windows
             IEnumDebugStackFrames enumFrames;
             activeScript.EnumStackFrames(out enumFrames);
 
+            if (enumFrames == null)
+            {
+                return "";
+            }
+
             while (true)
             {
                 DebugStackFrameDescriptor descriptor;

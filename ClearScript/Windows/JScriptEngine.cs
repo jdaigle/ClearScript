@@ -177,7 +177,7 @@ namespace Microsoft.ClearScript.Windows
         /// <param name="name">A name to associate with the instance. Currently this name is used only as a label in presentation contexts such as debugger user interfaces.</param>
         /// <param name="flags">A value that selects options for the operation.</param>
         public JScriptEngine(string name, WindowsScriptEngineFlags flags)
-            : this("JScript", name, flags)
+            : this("{16d51579-a30b-4c8b-a276-0ff4dc41e755}", name, flags)
         {
         }
 
